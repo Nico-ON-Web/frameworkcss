@@ -233,6 +233,18 @@ a{
 }
 
 /*--------------------------------------------------
+🚀 Margins and paddings ... don't abuse ! 
+---------------------------------------------------*/
+.mt-64{
+    margin-top: 64px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.p-16{
+    padding: 16px;
+}
+/*--------------------------------------------------
 ✅Boutons (rajoutez les hover de vos choix 😊)
 ---------------------------------------------------*/
 .btn{
@@ -304,3 +316,30 @@ header a:hover{
         font-size: 14px;
     }
 }
+
+.avis{
+    &>div{
+        --gap: 16px;
+    }
+    
+    border-radius: 8px;
+    h4{
+        margin: 0;
+    }
+    .avatar{
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
+        background-color: var(--grey);
+        padding : 8px;
+        
+    }
+    .stars{
+        color: var(--primary);
+    }
+    p{
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}
+
