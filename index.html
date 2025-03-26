@@ -1,119 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Utilisation de mon framework</title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="flex align-center justify-between">
         <div>LOGO</div>
         <div class="flex align-center gap">
             <nav>
-                <a href="">Home</a>
-                <a href="">Menu 1</a>
+                <a href="index.html">Home</a>
+                <a href="doc.html">Page</a>
                 <a href="">Menu 1</a>
                 <a href="">Menu 1</a>
             </nav>
             <a href="" class="btn btn-primary">Me connecter</a>
         </div>
     </header>
-    <div class="container-1000">
-        <h1>Mon framework css (headings niveau 1)</h1>
-        <h2>headings (niveau 2)</h2>
-        <h3>headings (niveau 3)</h3>
-        <h4>headings (niveau 4)</h4>
-        <div class="flex gap">
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-6"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-4"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-4"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-4"></div>
+    <div class="hero">
+        <div class="hero-banner">
+            <h2 class="slogan">
+                This is a grosse phrase d'accroche
+            </h2>
+            <p>Petit paragraphe de slogan sur une ou 2 lignes vite fait</p>
+            <a href="" class="btn btn-primary">Achèèèèète !</a>
         </div>
-        <h2>Boutons</h2>
-        <div class="flex gap">
-            <a href="" class="btn btn-primary">Primary</a>
-            <a href="" class="btn btn-secondary">Secondary</a>
-            <a href="" class="btn btn-disabled">Disabled</a>
+    </div>
 
-        </div>
-        <h2>cards</h2>
-        <h3>Simple cards</h3>
+    <!-- Sections cartes -->
+    <section class="container-1000 mt-100">
+        <h2>Lorem Ipsum t'as vu !</h2>
         <div class="flex gap">
             <div class="card large-3 medium-6 small-12">
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
+                <h4>Titre de la carte</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
             <div class="card large-3 medium-6 small-12">
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
+                <h4>Titre de la carte</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
             <div class="card large-3 medium-6 small-12" medium-6 small-12>
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
+                <h4>Titre de la carte</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
             <div class="card large-3 medium-6 small-12">
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
+                <h4>Titre de la carte</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
         </div>
-        <h3>Avis utilisateurs</h3>
-        <div class="flex gap">
-            <div class="avis large-4 medium-6 small-12">
-                <div class="flex gap align-center">
-                    <div class="avatar"></div>
-                    <div>
-                        <h4>Nom prenom</h4>
-                        <div class="stars">
-                            ★★★★☆
+    </section>
+
+    <!-- Section avec petits articles alternés -->
+    <section class="container-1000 mt-100">
+        <h2>Lorem Ipsum encore et ouais ! </h2>
+        <article class="flex align-center gap mt-32">
+            <div class="large-6 medium-6 small-12">
+                <img src="./assets/img-placeholder.jpg" class="responsive" alt="">
+            </div>
+            <div class="large-6 medium-6 small-12">
+                <h3>Titre de la section  / article</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi dolores aspernatur veniam at?</p>
+                <a href="" class="btn btn-secondary mt-32">Lire la suite</a>
+            </div>
+        </article>
+        <article class="flex align-center gap mt-64">
+            <div class="large-6 medium-6 small-12">
+                <h3>Titre de la section  / article</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi dolores aspernatur veniam at?</p>
+                <a href="" class="btn btn-secondary mt-32">Lire la suite</a>
+            </div> 
+            <div class="large-6 medium-6 small-12">
+                <img src="./assets/img-placeholder.jpg" class="responsive" alt="">
+            </div>
+        </article>
+    </section>
+
+    <!-- Section avis utilisateurs -->
+    <section class="bg-grey mt-100">
+        <div class="container-1000">
+            <h2>Avis utilisateurs</h2>
+            <div class="flex gap align-start mt-32">
+                <div class="avis large-4 medium-6 small-12">
+                    <div class="flex gap align-center">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Nom prenom</h4>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
                         </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
-            </div>
-            <div class="avis large-4 medium-6 small-12">
-                <div class="flex gap align-center">
-                    <div class="avatar"></div>
-                    <div>
-                        <h4>Nom prenom</h4>
-                        <div class="stars">
-                            ★★★★☆
+                <div class="avis large-4 medium-6 small-12">
+                    <div class="flex gap align-center">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Nom prenom</h4>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
                         </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
-            </div>
-            <div class="avis large-4 medium-6 small-12">
-                <div class="flex gap align-center">
-                    <div class="avatar"></div>
-                    <div>
-                        <h4>Nom prenom</h4>
-                        <div class="stars">
-                            ★★★★☆
+                <div class="avis large-4 medium-6 small-12">
+                    <div class="flex gap align-center">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Nom prenom</h4>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
                         </div>
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
-            </div>
+            </div> 
         </div>
-    </div>
+        
+    </section>
 
 </body>
-
 </html>
