@@ -17,6 +17,6 @@ Ainsi que les classes fonctionnelles pratiques pour faire une mise en page rapid
 
 Pour les petites cards et les illustrations en 
 appercu, on utilise une image placeholder rangée dans le dossier asset
-![Nom de l'image](assets/img-placeholder.png)
+![Nom de l'image](assets/img-placeholder.jpg)
 
 ## Libre a vous de customiser cette base pour répondre aux besoins graphiques de votr projet ! 🚀🎨
