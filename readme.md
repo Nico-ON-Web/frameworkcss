@@ -19,4 +19,8 @@ Pour les petites cards et les illustrations en
 appercu, on utilise une image placeholder rangée dans le dossier asset
 ![Nom de l'image](assets/img-placeholder.jpg)
 
+## installation de la police Material design icons font de Google
+
+npm install @material-design-icons/font@latest
+
 ## Libre a vous de customiser cette base pour répondre aux besoins graphiques de votr projet ! 🚀🎨
