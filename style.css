@@ -1,9 +1,38 @@
+/*import des icons*/
 @import '@material-design-icons/font';
+
+/*import des Typographies*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat/Montserrat-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
-    font-family: sans-serif;
+    font-family: Montserrat;
+}
+
+
+/*--------------------------------------------------
+🤓 Material Icons
+----------------------------------------------------*/
+
+.material-icons, .material-icons-outlined, .material-icons-filled, .material-icons-rounded, .material-icons-shar,.material-icons-two-tone{
+  vertical-align: text-top;
+  color : currentColor;
+  font-size: inherit;
+  display: inline-block;
+  
+}
+
+.btn .material-icons, .btn .material-icons-outlined, .btn .material-icons-filled, .btn .material-icons-rounded, .btn .material-icons-shar,.btn .material-icons-two-tone{
+ margin-right: 8px;
+  
 }
 
 /*--------------------------------------------------
