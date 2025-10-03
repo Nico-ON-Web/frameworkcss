@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilisation de mon framework</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="./node_modules/@material-design-icons/font/index.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <header class="flex align-center justify-between">
         <div>LOGO</div>
-        <div class="flex align-center gap">
-            <nav>
-                <a href="index.html"><span class="material-icons-outlined">
-                    home
-                    </span>Home</a>
-                <a href="doc.html">Page</a>
-                <a href="">Menu 1</a>
-                <a href="">Menu 1</a>
-            </nav>
+        <nav class="flex align-center gap closed-nav">
+            <a href="index.html"><i class="ph ph-house"></i></a>
+            <a href="doc.html">Page</a>
+            <a href="">Menu 1</a>
+            <a href="">Menu 1</a>
             <a href="" class="btn btn-primary">Me connecter</a>
-        </div>
+        </nav>
+        <label class="burger">
+            <input type="checkbox" name="buger" id="burger">
+             <i class="ph ph-list"></i>
+        
+        </label>  
+      
     </header>
     <!-- Hero baniere -->
     <div class="hero">
@@ -30,10 +31,12 @@
             <h2 class="slogan">This is a grosse phrase d'accroche</h2>
             <p>Petit paragraphe de slogan sur une ou 2 lignes vite fait</p>
             <p>Amener au cta par l'entonoir</p>
-            <a href="" class="btn btn-primary"><span class="material-icons-outlined">
-                paid
-                </span>Achèèèèète !</a>
+            <a href="" class="btn btn-primary">
+                <i class="ph ph-shopping-cart"></i>
+            Achèèèèète !</a>
         </div>
+       
+
     </div>
 
     <!-- Sections cartes -->
@@ -87,7 +90,7 @@
             <div class="large-6 medium-6 small-12">
                 <h3>Titre de la section  / article</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi dolores aspernatur veniam at?</p>
-                <a href="" class="btn btn-secondary mt-32">Lire la suite</a>
+                <a href="#toto" class="btn btn-secondary mt-32">Lire la suite</a>
             </div> 
         </article>
     </section>
@@ -136,5 +139,6 @@
             </div> 
         </div> 
     </section>
+    <script src="app.js" defer></script>
 </body>
 </html>

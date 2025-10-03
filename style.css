@@ -1,4 +1,4 @@
-
+@import url("./node_modules/@phosphor-icons/web/src/regular/style.css");
 
 /*import des Typographies*/
 @font-face {
@@ -17,22 +17,7 @@
 }
 
 
-/*--------------------------------------------------
-🤓 Material Icons
-----------------------------------------------------*/
 
-.material-icons, .material-icons-outlined, .material-icons-filled, .material-icons-rounded, .material-icons-shar,.material-icons-two-tone{
-  vertical-align: text-top;
-  color : currentColor;
-  font-size: inherit;
-  display: inline-block;
-  
-}
-
-.btn .material-icons, .btn .material-icons-outlined, .btn .material-icons-filled, .btn .material-icons-rounded, .btn .material-icons-shar,.btn .material-icons-two-tone{
- margin-right: 8px;
-  
-}
 
 /*--------------------------------------------------
 🤖 Variables
@@ -45,6 +30,8 @@
     --white: #fff;
     --grey: #636363;
     --light-grey: #aaa;
+    --hover: rgb(163, 151, 151);
+    
 }
 
 /*--------------------------------------------------
@@ -156,7 +143,7 @@ les resolutions d'ecrans d'apres un petit script sass*/
   }
   
   /*Tablets*/
-  @media all and (max-width: 700px) {
+  @media all and (max-width: 800px) {
     .medium-1 {
       width: calc(8.3333333333% - 11 * var(--gap) / 12);
     }
@@ -305,7 +292,9 @@ a{
     border: 2px solid var(--grey);
 }
 
-
+.btn:hover{
+  
+}
 
 /*--------------------------------------------------
 🎓Header
@@ -326,8 +315,47 @@ header nav a{
     color: var(--black);
     transition: color .33s ease;
 }
-header a:hover{
-    color : var(--primary);
+header a:hover, a:hover, a:hover>i{
+  color : var(--hover)
+}
+
+a.btn:hover, header a.btn:hover{
+    
+}
+.burger{
+  display: none;
+}
+@media all and (max-width: 800px) {
+  header>nav{
+    position: absolute;
+    top: 51px;
+    left:0;
+    background-color: var(--secondary);
+    filter: brightness(1.1);
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 100vh;
+    transform: translate(0,0);
+    transition: transform 0.3s ease;
+
+    
+  }
+  
+  .closed-nav{
+    transform: translate(100%, 0);
+  
+  }
+  
+  .burger{
+    display: block;
+    
+  }
+  #burger{display: none;}
 }
 
 /*--------------------------------------------------
