@@ -295,8 +295,13 @@ header nav {
 header nav a {
   color: var(--premier-plan);
   transition: color .33s ease;
+  display: flex;
+  align-items: center;
+  gap:4px
 }
-
+nav i{
+  font-size: 20px;
+}
 header a:hover,
 a:hover,
 a:hover>i {

@@ -407,6 +407,7 @@ if(sliders){
 
 
 /**Toggle dark / light mode*/
+/*
 const toggle = document.getElementById('dark-mode-toggle');
 if(toggle){
     toggle.addEventListener('change', () => {
@@ -428,3 +429,39 @@ if(trigger){
         sidebar.classList.toggle("sidebar-masked")
     })
 }
+*/
+ const toggle = document.getElementById('dark-mode-toggle');
+  const body = document.body;
+
+  // 1. Charger le thème sauvegardé s'il existe
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme) {
+    body.classList.add(savedTheme);
+    toggle.checked = savedTheme === 'dark';
+  } else {
+    // Optionnel : détecter le thème système au premier chargement
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      body.classList.add('dark');
+      toggle.checked = true;
+      localStorage.setItem('theme', 'dark');
+    } else {
+      body.classList.add('light');
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  // 2. Écouter le changement du switch
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      body.classList.remove('light');
+      body.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      body.classList.remove('dark');
+      body.classList.add('light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+/** Theme mode */
