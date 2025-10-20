@@ -884,7 +884,10 @@ les resolutions d'ecrans d'apres un petit script sass*/
 
 /*Smartphones*/
 @media all and (max-width: 500px) {
-
+.slider{
+  height: 260px;
+ 
+}
   .small-1 {
     width: calc(8.3333333333% - 11 * var(--gap) / 12);
   }
