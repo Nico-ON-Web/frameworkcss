@@ -28,31 +28,34 @@ html {
 }
 
 body.light {
-  --premier-plan: #2B2B2B;
-  --deuxieme-plan: #fae2cb;
-  --troisieme-plan: #f5eae0;
-  --arriere-plan: #FAFAFA;
-  --primary: #FF7A00;
-  --secondary: #FFD166;
-  --hover: #000000;
+   --primary: #0077ff;
+  --secondary: #792556;
+  --hover: #005fcc;
+
+  --premier-plan: #1a1c1e;     /* Texte principal */
+  --deuxieme-plan: #f7f8fa;    /* Fond des cartes / sections */
+  --troisieme-plan: #edeff2;   /* Fond alterné */
+  --arriere-plan: #fcfcfd; 
 }
 
 body.dark {
 
-  --premier-plan: #F8F8F8;
-  --deuxieme-plan: #888888;
-  --troisieme-plan: #1E1E1E;
-  --arriere-plan: #0E0E0E;
+ --primary: #5da0ff;
+  --secondary: #792556;
+  --hover: #7cb8ff;
 
-  --primary: #FF9B50;
-  --secondary: #FFD45A;
-  --hover: #292929;
+  --premier-plan: #f4f6f8;     /* Texte principal clair */
+  --deuxieme-plan: #181a1e;    /* Fond principal */
+  --troisieme-plan: #20242a;   /* Fond secondaire */
+  --arriere-plan: #0f1115;     /* Fond global */
 }
 
 body {
   background-color: var(--arriere-plan);
   color: var(--premier-plan)
 }
+
+
 
 /*--------------------------------------------------
 📦Container et responsive
@@ -393,7 +396,13 @@ a {
   color: var(--arriere-plan);
 }
 
-.btn-secondary {
+.btn-secondary{
+  background-color: var(--secondary);
+  color: var(--arriere-plan);
+  border: 2px solid var(--secondary);
+}
+
+.btn-outlined {
 
   color: var(--primary);
 }
@@ -407,7 +416,19 @@ a {
   border: 2px solid var(--deuxieme-plan);
 }
 
-.btn:hover {}
+.btn-primary:hover {
+  
+  color: var(--arriere-plan) !important;
+  
+  background-color: var(--hover); 
+  border: 2px solid var(--hover);
+}
+
+.btn-secondary:hover{
+    color: var(--arriere-plan);
+    filter:brightness(1.2)
+}
+
 
 /*--------------------------------------------------
 🎓Header
@@ -881,3 +902,11 @@ pre {
 }
 
 /*todo: forms*/
+
+html{
+  scroll-behavior: smooth;
+  
+}
+section{
+  scroll-margin-top: 100px ;
+}

@@ -41,10 +41,9 @@
     <div class="hero">
         <div class="hero-banner">
             <h2 class="slogan">Utilisation du Framework</h2>
-            <p>Une documentation simple et concise</p>
-            <p>du moins on l'espère</p>
+            <p>Télécharge le stater pack et commence à coder!</p>
             <a href="" class="btn btn-primary">
-                Découvrir</a>
+                Télécharger</a>
         </div>
     </div>
     <!-- Zone avec sidebar  -->
@@ -53,20 +52,20 @@
             <div class="sidebar">
                 <nav class="sidebar-nav">
                     <ul>
-                        <li><a href="">Couleurs</a></li>
-                        <li><a href="">Titres et paragraphes</a></li>
-                        <li><a href="">Margins et paddings</a></li>
-                        <li><a href="">Boutons</a></li>
-                        <li><a href="">Largeur et Colonnes</a></li>
-                        <li><a href="">Cards</a></li>
-                        <li><a href="">Accordeon</a></li>
-                        <li><a href="">Carousel</a></li>
+                        <li><a href="index.html#couleurs">Couleurs</a></li>
+                        <li><a href="index.html#titres">Titres et paragraphes</a></li>
+                        <li><a href="index.html#margins">Margins et paddings</a></li>
+                        <li><a href="index.html#boutons">Boutons</a></li>
+                        <li><a href="index.html#largeurs">Largeur et Colonnes</a></li>
+                        <li><a href="index.html#cards">Cards</a></li>
+                        <li><a href="index.html#accordeon">Accordeon</a></li>
+                        <li><a href="index.html#carousel">Carousel</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="right-side">
                 <!-- Couleurs  -->
-                <section class="mt-100">
+                <section id="couleurs" class="mt-100">
                     <h2>Couleurs</h2>
                     <p>Un systeme de couleurs simple avec 2 criteres: notion de priorité et notion d'eloignement</p>
                     <div class="mt-64">
@@ -90,7 +89,7 @@
 
                 </section>
                 <!-- Titres et paragraphes -->
-                <section class="mt-100">
+                <section id="titres" class="mt-100">
                     <h2>Titres et paragraphes</h2>
                     <p>Les titres h1 à h6 ainsi que les paragraphes utilisent la typographie Outfit , disponible sur
                         google font. Les fichiers sources se trouvent dans le dossier <span
@@ -117,7 +116,7 @@
 
                 </section>
                 <!-- Marges et paddings -->
-                <section class="mt-100">
+                <section id="margins" class="mt-100">
                     <h2>Marges internes et externes</h2>
                     <p>Une liste de classes fonctionnelles permettent de rajouter des marges et des paddings, la
                         nomenclature suit cette regle : </p>
@@ -132,7 +131,7 @@
 
                 </section>
                 <!-- Boutons -->
-                <section class="mt-100">
+                <section id="boutons" class="mt-100">
                     <h2>Boutons</h2>
                     <p><span class="classname">.btn</span> est la classe générique qui permet de styliser les boutons
                     </p>
@@ -143,11 +142,12 @@
                     <div class="mt-16 flex gap">
                         <a href="" class="btn btn-primary">Bouton primaire</a>
                         <a href="" class="btn btn-secondary">Bouton secondaire</a>
+                        <a href="" class="btn btn-outlined">Bouton filiaire</a>
                         <a href="" class="btn btn-disabled">Bouton inactif</a>
                     </div>
                 </section>
                 <!-- Largeur et colonnes -->
-                <section class="mt-100">
+                <section id="largeurs" class="mt-100">
                     <h2>Largeurs et colonnes</h2>
                     <p>Pour la mise en page le framework utilise le systeme de flexbox avec les classes fonctionnelles
                         classiques <span class="classname">.flex</span>, <span
@@ -222,7 +222,7 @@
                 </section>
 
                 <!-- Cards -->
-                <section class="mt-100">
+                <section id="cards" class="mt-100">
                     <h2>Cards</h2>
                     <p>nous vous proposons deux modeles de cartes toutes pretes : des cartes classiques avec image,
                         description et bouton, ainsi que des cartes pour des avis cliens</p>
@@ -240,10 +240,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
         <a href="" class="btn btn-primary">voir le truc</a>
     </div>
-</div>           
-                          
+</div>                                  
 </script>
-                            </div>
+</div>
                             <!-- Appercu carte classique -->
                             <div>
                                 <div class="m-auto mt-32 card large-5 medium-6 small-12">
@@ -304,7 +303,7 @@ rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. 
                 </section>
 
                 <!-- section accordeon -->
-                <section class="mt-100">
+                <section id="accordeon" class="mt-100">
                     <h2>Accordeon</h2>
                     <p>Un systeme d'accordéon géré en javascript , pour qu'il fonctionne vous devez utiliser la
                         structure suivante: </p>
@@ -380,7 +379,7 @@ rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. 
                     </div>
                 </section>
                 <!-- Section slider -->
-                <section>
+                <section id="carousel" class="mt-100">
                     <h2>Carousel</h2>
                     <p>je vous propose deux types de carousel selon le type de transition entre les slides contrôlable
                         grâce à l'attribut data-type :</p>
