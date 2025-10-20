@@ -50,8 +50,6 @@ body.dark {
 body {
   background-color: var(--arriere-plan);
   color: var(--premier-plan);
-  overflow-x: hidden;
-  
 }
 
 
@@ -277,8 +275,8 @@ a {
 header {
   background-color: var(--troisieme-plan);
   padding: 16px 64px;
-  position: fixed;
-  top: 0px;
+  position: sticky;
+  top: 0;
   left: 0px;
   z-index: 999;
   width: 100%;
@@ -834,9 +832,12 @@ les resolutions d'ecrans d'apres un petit script sass*/
       margin-top: 32px;
     }
   }
-
+  .hero{
+    height: 70vh;
+  }
   .hero{img{
     width: 130px;
+   
   }}
   .medium-1 {
     width: calc(8.3333333333% - 11 * var(--gap) / 12);
