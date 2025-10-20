@@ -15,9 +15,6 @@
   font-family: Outfit;
 }
 
-html,body {
-  overflow-x: hidden;
-}
 
 
 /*--------------------------------------------------
@@ -315,7 +312,7 @@ header a.btn:hover {}
 
 @media all and (max-width: 800px) {
   header>nav {
-    position: absolute;
+    position: fixed;
     top: 51px;
     left: 0;
     background-color: var(--troisieme-plan);
@@ -823,7 +820,7 @@ les resolutions d'ecrans d'apres un petit script sass*/
 /*Tablets*/
 @media all and (max-width: 800px) {
   header{
-    position: fixed;
+    position: sticky;
     top:0;
     width: 100vw;
   }
