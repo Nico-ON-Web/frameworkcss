@@ -419,3 +419,12 @@ if(toggle){
   }
 });
 }
+
+
+const trigger = document.querySelector(".trigger-sidebar")
+const sidebar = document.querySelector(".sidebar")
+if(trigger){
+    trigger.addEventListener("click",()=>{
+        sidebar.classList.toggle("sidebar-masked")
+    })
+}
