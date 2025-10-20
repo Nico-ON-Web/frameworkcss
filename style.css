@@ -510,6 +510,16 @@ header a.btn:hover {}
   background: var(--troisieme-plan);
   height: 55vh;
   position: relative;
+  overflow: hidden;
+}
+.hero img{
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+  
 }
 
 .hero-banner {
@@ -518,7 +528,7 @@ header a.btn:hover {}
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+z-index: 2;
   h2,
   .sloggan,
   .btn {
