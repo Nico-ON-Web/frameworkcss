@@ -28,26 +28,30 @@ html {
 }
 
 body.light {
-   --primary: #0077ff;
-  --secondary: #792556;
-  --hover: #005fcc;
+   --primary: #89584A;
+  --secondary: #9e796c;
+  --hover: #89584A;
 
-  --premier-plan: #1a1c1e;     /* Texte principal */
-  --deuxieme-plan: #f7f8fa;    /* Fond des cartes / sections */
+  --premier-plan: #2A3546;     /* Texte principal */
+  --deuxieme-plan: #DED9D3;    /* Fond des cartes / sections */
   --troisieme-plan: #edeff2;   /* Fond alterné */
   --arriere-plan: #fcfcfd; 
 }
 
 body.dark {
 
- --primary: #5da0ff;
-  --secondary: #ac32b8;
-  --hover: #7cb8ff;
+ --primary: #CFA394;
+  --secondary: #B28E82;
+  --hover: #E2BFB1;
 
-  --premier-plan: #f4f6f8;     /* Texte principal clair */
-  --deuxieme-plan: #181a1e;    /* Fond principal */
-  --troisieme-plan: #20242a;   /* Fond secondaire */
-  --arriere-plan: #0f1115;     /* Fond global */
+  --premier-plan: #E8E6E3;     /* Texte principal clair */
+  --deuxieme-plan: #2A2E36;    /* Fond principal */
+  --troisieme-plan: #1F2329;   /* Fond secondaire */
+  --arriere-plan: #15181C; 
+
+  .hero, .hero h2{
+    color: var(--arriere-plan) ! important;
+  }
 }
 
 body {
@@ -507,7 +511,8 @@ header a.btn:hover {}
 🦸Hero
 ---------------------------------------------------*/
 .hero {
-  background: var(--troisieme-plan);
+  background-image: url("./images-exemple/deco.jpg");
+  background-size: cover;
   height: 55vh;
   position: relative;
 }
@@ -584,8 +589,8 @@ header a.btn:hover {}
     height: 64px;
     border-radius: 64px;
     background-color: var(--premier-plan);
-    padding: 8px;
-
+   
+overflow: hidden;
   }
 
   .stars {
@@ -595,6 +600,10 @@ header a.btn:hover {}
   p {
     margin-top: 16px;
     font-size: 14px;
+  }
+
+  img{
+    width: 100%;
   }
 }
 
