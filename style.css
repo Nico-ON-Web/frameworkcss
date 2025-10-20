@@ -41,7 +41,7 @@ body.light {
 body.dark {
 
  --primary: #5da0ff;
-  --secondary: #792556;
+  --secondary: #ac32b8;
   --hover: #7cb8ff;
 
   --premier-plan: #f4f6f8;     /* Texte principal clair */
@@ -408,9 +408,9 @@ a {
 }
 
 .btn-disabled {
-  background-color: var(--deuxieme-plan);
+  background-color: var(--troisieme-plan);
   filter: grayscale(0.9);
-  opacity: 0.5;
+  opacity: 0.6;
   color: var(--premier-plan);
   cursor: not-allowed;
   border: 2px solid var(--deuxieme-plan);
@@ -702,7 +702,7 @@ header a.btn:hover {}
   [data-type='translation'] {
 
     display: flex;
-    transition: transform 0.6s ease-in-out;
+    
 
     .slide {
       width: 100%;
@@ -716,7 +716,8 @@ header a.btn:hover {}
   width: 100%;
   height: 100%;
   object-fit: cover;
-
+transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
   img {
     width: 100%;
     height: 100%;
