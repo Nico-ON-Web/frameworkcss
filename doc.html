@@ -4,116 +4,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Utilisation de mon framework</title>
+    <meta name="description" content="">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header class="flex align-center justify-between">      
-        <div></i>LOGO</div>
-        <div class="flex align-center gap">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="doc.html">Page</a>
-                <a href="">Menu 1</a>
-                <a href="">Menu 1</a>
-            </nav>
+    <header class="flex align-center justify-between">
+        <div>LOGO</div>
+        <nav class="flex align-center gap closed-nav">
+            <a href="index.html"><i class="ph ph-house"></i></a>
+            <a href="doc.html">Page</a>
+            <a href="">Menu 1</a>
+            <a href="">Menu 1</a>
             <a href="" class="btn btn-primary">Me connecter</a>
-        </div>
-    </header>
-    <div class="container-1000">
-        <h1>Mon framework css (headings niveau 1)</h1>
-        <h2>headings (niveau 2)</h2>
-        <h3>headings (niveau 3)</h3>
-        <h4>headings (niveau 4)</h4>
-        <div class="flex gap">
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-6"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-3"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-4"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-4"></div>
-            <div style="background-color:rgb(173, 173, 173); height: 100px" class="large-4"></div>
-        </div>
-        <h2>Boutons</h2>
-        <div class="flex gap">
-            <a href="" class="btn btn-primary">Primary</a>
-            <a href="" class="btn btn-secondary">Secondary</a>
-            <a href="" class="btn btn-disabled">Disabled</a>
+        </nav>
+        <label class="burger">
+            <input type="checkbox" name="buger" id="burger">
+            <i class="ph ph-list"></i>
 
+        </label>
+
+    </header>
+    <!-- Hero baniere -->
+    <div class="hero">
+        <div class="hero-banner">
+            <h2 class="slogan">This is a grosse phrase d'accroche</h2>
+            <p>Petit paragraphe de slogan sur une ou 2 lignes vite fait</p>
+            <p>Amener au cta par l'entonoir</p>
+            <a href="" class="btn btn-primary">
+                <i class="ph ph-shopping-cart"></i>
+                Achèèèèète !</a>
         </div>
-        <h2>cards</h2>
-        <h3>Simple cards</h3>
+
+
+    </div>
+
+    <!-- Sections cartes -->
+    <section class="container-1000 mt-100">
+        <h2>Lorem Ipsum t'as vu !</h2>
         <div class="flex gap">
             <div class="card large-3 medium-6 small-12">
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
+                <h4>Titre de la carte</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere
+                    corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
             <div class="card large-3 medium-6 small-12">
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
+                <h4>Titre de la carte</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere
+                    corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
             <div class="card large-3 medium-6 small-12" medium-6 small-12>
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
+                <h4>Titre de la carte</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere
+                    corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
             <div class="card large-3 medium-6 small-12">
                 <img src="./assets/img-placeholder.jpg" alt="">
-                <h3>Titre de la carte</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
+                <h4>Titre de la carte</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere
+                    corrupti perferendis culpa vitae commodi accusamus</p>
                 <a href="" class="btn btn-primary">voir le truc</a>
             </div>
         </div>
-        <h3>Avis utilisateurs</h3>
-        <div class="flex gap">
-            <div class="avis large-4 medium-6 small-12">
-                <div class="flex gap align-center">
-                    <div class="avatar"></div>
-                    <div>
-                        <h4>Nom prenom</h4>
-                        <div class="stars">
-                            ★★★★☆
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
+    </section>
+
+    <!-- Section avec petits articles alternés -->
+    <section class="container-1000 mt-100">
+        <h2>Lorem Ipsum encore et ouais ! </h2>
+        <article class="flex align-center gap mt-32">
+            <div class="large-6 medium-6 small-12">
+                <img src="./assets/img-placeholder.jpg" class="responsive" alt="">
             </div>
-            <div class="avis large-4 medium-6 small-12">
-                <div class="flex gap align-center">
-                    <div class="avatar"></div>
-                    <div>
-                        <h4>Nom prenom</h4>
-                        <div class="stars">
-                            ★★★★☆
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
+            <div class="large-6 medium-6 small-12">
+                <h3>Titre de la section / article</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima
+                    consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi
+                    dolores aspernatur veniam at?</p>
+                <a href="" class="btn btn-secondary mt-32">Lire la suite</a>
             </div>
-            <div class="avis large-4 medium-6 small-12">
-                <div class="flex gap align-center">
-                    <div class="avatar"></div>
-                    <div>
-                        <h4>Nom prenom</h4>
-                        <div class="stars">
-                            ★★★★☆
+        </article>
+        <article class="flex reverse align-center gap mt-64">
+            <div class="large-6 medium-6 small-12">
+                <img src="./assets/img-placeholder.jpg" class="responsive" alt="">
+            </div>
+            <div class="large-6 medium-6 small-12">
+                <h3>Titre de la section / article</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima
+                    consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi
+                    dolores aspernatur veniam at?</p>
+                <a href="#toto" class="btn btn-secondary mt-32">Lire la suite</a>
+            </div>
+        </article>
+    </section>
+
+    <!-- Section FAQ -->
+    <section class="container-1000 mt-100 flex gap align-center">
+        <div class="large-6 medium-6 small-12">
+            <h2>FAQ</h2>
+            <p>Les questions que vous vous posez (ou pas)</p>
+            
+        </div>
+        <div class="large-6 medium-6 small-12">
+            <!-- Accoridon -->
+           
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>Titre de l'accordeon</h4>
+                            <i class="ph ph-caret-right"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea itaque quod
+                                    sunt inventore architecto, odit saepe cumque laudantium aspernatur sit voluptatibus,
+                                    asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>Titre de l'accordeon</h4>
+                            <i class="ph ph-caret-right"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea itaque quod
+                                    sunt inventore architecto, odit saepe cumque laudantium aspernatur sit voluptatibus,
+                                    asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>Titre de l'accordeon</h4>
+                            <i class="ph ph-caret-right"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea itaque quod
+                                    sunt inventore architecto, odit saepe cumque laudantium aspernatur sit voluptatibus,
+                                    asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+
+
+            </div>
+    </section>
+    <!-- test d'un bento -->
+    <section class="bg-grey ptb-32 mt-100">
+        <div class="container-1000">
+        <h2>Et ca aussi c'est cool !</h2>
+        <p>
+            avec le systemes de classes de largeur et le gap constant vous pouvez facilement faire des petits bentos modernes et sympas
+        </p>
+
+        <div class="flex gap mt-32" style="--gap:16px">
+            <div class="large-6 small-12 bg-light-blue bento">
+                <img src="./assets/20-3670x2462.jpg" alt="" class="responsive">
+            </div>
+            <div class="large-6 small-12 flex gap">
+                <div class="large-12 bg-light-blue flex align-center justify-center">
+                    <h3 class="text-center">Pas mal n'est ce pas ?</h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
+                <div class="large-12 flex gap">
+                    <div class="large-3 bg-light-blue"></div>
+                    <div class="large-9 bg-light-blue"></div>
+                </div>
             </div>
         </div>
     </div>
+    </section>
+    <!-- Partie slider -->
+    <div class="container-1000 mt-100">
+    <h2>Nouvel ajout: les sliders</h2>
+    <p>2 types : fondu avec l'opacité et translation</p>
+            <div class="slider mt-32">
+                <div class="slides" data-type="opacity">
+                    <div class="slide slide-visible">
+                        <img src="./assets/17-2500x1667.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/20-3670x2462.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/28-4928x3264.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider-navigation">
+                    <div class="slider-left">
+                        <i class="ph ph-caret-left"></i>
+                    </div>
+                    <div class="slider-right">
+                        <i class="ph ph-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+    <!-- Section avis utilisateurs -->
+    <section class="bg-grey mt-100">
+        <div class="container-1000">
+            <h2>Avis utilisateurs</h2>
+            <div class="flex gap align-start mt-32">
+                <div class="avis large-4 medium-6 small-12">
+                    <div class="flex gap align-center">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Nom prenom</h4>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita
+                        rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni.
+                    </p>
+                </div>
+                <div class="avis large-4 medium-6 small-12">
+                    <div class="flex gap align-center">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Nom prenom</h4>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita
+                        rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni.
+                    </p>
+                </div>
+                <div class="avis large-4 medium-6 small-12">
+                    <div class="flex gap align-center">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>Nom prenom</h4>
+                            <div class="stars">
+                                ★★★★☆
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita
+                        rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Zone avec sidebar  -->
+    <section class="mt-100">
+        <div class="flex gap">
+            <div class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="">ancre 1</a></li>
+                        <li><a href="">ancre 2</a></li>
+                        <li><a href="">ancre 3</a></li>
+                        <li><a href="">ancre 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-side">
+                <h2>Zone avec une barre de navigation latérale a gauche</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi sint velit aut. Dolores hic facere exercitationem doloribus necessitatibus enim in perspiciatis impedit! Quae vitae sapiente quaerat magnam, consectetur delectus.
+    Aliquid quae placeat nam sit, ut dolore eius ratione vero quod excepturi sequi totam rerum? Cupiditate, dolore sit? Nobis qui harum recusandae! Eaque, repellat aperiam quod voluptas eligendi distinctio quae.
+    Quam aliquam necessitatibus deleniti. Aperiam tempora minima amet, eius quis facere. Iusto autem porro quo, aspernatur quas animi, laudantium provident magnam aliquid hic est minima, numquam quaerat explicabo tempore. Mollitia.
+    Officiis, aliquid rerum! Aliquam id, amet adipisci incidunt voluptatum culpa ipsam deserunt voluptates quos ipsa perspiciatis autem voluptatibus sequi, earum rerum iusto suscipit voluptate dignissimos unde nemo. Quod, fuga velit.
+    Magni necessitatibus, laborum dolores deserunt eaque ex eum cum, recusandae repellendus quis est tempora excepturi, beatae inventore nemo hic ad eius dignissimos. Similique fugiat odit nostrum. Dicta quasi asperiores optio?
+    Numquam unde quibusdam ea maxime eius commodi non, vitae voluptas ullam nisi odit temporibus repellat ut! Blanditiis in a dolorum mollitia, enim quibusdam ipsa nam doloremque nisi quam, rerum velit?
+    Hic deserunt ut dolor exercitationem quo nemo nobis quis beatae inventore officia maxime animi alias eius nulla praesentium reprehenderit neque ipsam, blanditiis aliquam amet omnis. Sit doloremque magni ad molestias.
+    Amet reprehenderit in illum perspiciatis quibusdam commodi magni, dicta, corrupti cum, modi qui atque quisquam harum ipsum ipsa hic nihil eum eaque laborum! Voluptas natus incidunt minus vel, aspernatur repellat.
+    Unde molestiae aspernatur consequuntur. Voluptatem ex est, blanditiis officiis suscipit eveniet aperiam velit nihil, voluptates sunt nobis laborum quisquam autem asperiores nam cupiditate exercitationem fugit placeat, reiciendis cumque recusandae? Excepturi.
+    Ea iure natus fugiat saepe sequi molestias nemo voluptas incidunt quos optio labore officiis laborum non, culpa dignissimos obcaecati at eligendi neque nobis officia mollitia sunt. Debitis minima mollitia aperiam!</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi sint velit aut. Dolores hic facere exercitationem doloribus necessitatibus enim in perspiciatis impedit! Quae vitae sapiente quaerat magnam, consectetur delectus.
+    Aliquid quae placeat nam sit, ut dolore eius ratione vero quod excepturi sequi totam rerum? Cupiditate, dolore sit? Nobis qui harum recusandae! Eaque, repellat aperiam quod voluptas eligendi distinctio quae.
+    Quam aliquam necessitatibus deleniti. Aperiam tempora minima amet, eius quis facere. Iusto autem porro quo, aspernatur quas animi, laudantium provident magnam aliquid hic est minima, numquam quaerat explicabo tempore. Mollitia.
+    Officiis, aliquid rerum! Aliquam id, amet adipisci incidunt voluptatum culpa ipsam deserunt voluptates quos ipsa perspiciatis autem voluptatibus sequi, earum rerum iusto suscipit voluptate dignissimos unde nemo. Quod, fuga velit.
+    Magni necessitatibus, laborum dolores deserunt eaque ex eum cum, recusandae repellendus quis est tempora excepturi, beatae inventore nemo hic ad eius dignissimos. Similique fugiat odit nostrum. Dicta quasi asperiores optio?
+    Numquam unde quibusdam ea maxime eius commodi non, vitae voluptas ullam nisi odit temporibus repellat ut! Blanditiis in a dolorum mollitia, enim quibusdam ipsa nam doloremque nisi quam, rerum velit?
+    Hic deserunt ut dolor exercitationem quo nemo nobis quis beatae inventore officia maxime animi alias eius nulla praesentium reprehenderit neque ipsam, blanditiis aliquam amet omnis. Sit doloremque magni ad molestias.
+    Amet reprehenderit in illum perspiciatis quibusdam commodi magni, dicta, corrupti cum, modi qui atque quisquam harum ipsum ipsa hic nihil eum eaque laborum! Voluptas natus incidunt minus vel, aspernatur repellat.
+    Unde molestiae aspernatur consequuntur. Voluptatem ex est, blanditiis officiis suscipit eveniet aperiam velit nihil, voluptates sunt nobis laborum quisquam autem asperiores nam cupiditate exercitationem fugit placeat, reiciendis cumque recusandae? Excepturi.
+    Ea iure natus fugiat saepe sequi molestias nemo voluptas incidunt quos optio labore officiis laborum non, culpa dignissimos obcaecati at eligendi neque nobis officia mollitia sunt. Debitis minima mollitia aperiam!</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi sint velit aut. Dolores hic facere exercitationem doloribus necessitatibus enim in perspiciatis impedit! Quae vitae sapiente quaerat magnam, consectetur delectus.
+    Aliquid quae placeat nam sit, ut dolore eius ratione vero quod excepturi sequi totam rerum? Cupiditate, dolore sit? Nobis qui harum recusandae! Eaque, repellat aperiam quod voluptas eligendi distinctio quae.
+    Quam aliquam necessitatibus deleniti. Aperiam tempora minima amet, eius quis facere. Iusto autem porro quo, aspernatur quas animi, laudantium provident magnam aliquid hic est minima, numquam quaerat explicabo tempore. Mollitia.
+    Officiis, aliquid rerum! Aliquam id, amet adipisci incidunt voluptatum culpa ipsam deserunt voluptates quos ipsa perspiciatis autem voluptatibus sequi, earum rerum iusto suscipit voluptate dignissimos unde nemo. Quod, fuga velit.
+    Magni necessitatibus, laborum dolores deserunt eaque ex eum cum, recusandae repellendus quis est tempora excepturi, beatae inventore nemo hic ad eius dignissimos. Similique fugiat odit nostrum. Dicta quasi asperiores optio?
+    Numquam unde quibusdam ea maxime eius commodi non, vitae voluptas ullam nisi odit temporibus repellat ut! Blanditiis in a dolorum mollitia, enim quibusdam ipsa nam doloremque nisi quam, rerum velit?
+    Hic deserunt ut dolor exercitationem quo nemo nobis quis beatae inventore officia maxime animi alias eius nulla praesentium reprehenderit neque ipsam, blanditiis aliquam amet omnis. Sit doloremque magni ad molestias.
+    Amet reprehenderit in illum perspiciatis quibusdam commodi magni, dicta, corrupti cum, modi qui atque quisquam harum ipsum ipsa hic nihil eum eaque laborum! Voluptas natus incidunt minus vel, aspernatur repellat.
+    Unde molestiae aspernatur consequuntur. Voluptatem ex est, blanditiis officiis suscipit eveniet aperiam velit nihil, voluptates sunt nobis laborum quisquam autem asperiores nam cupiditate exercitationem fugit placeat, reiciendis cumque recusandae? Excepturi.
+    Ea iure natus fugiat saepe sequi molestias nemo voluptas incidunt quos optio labore officiis laborum non, culpa dignissimos obcaecati at eligendi neque nobis officia mollitia sunt. Debitis minima mollitia aperiam!</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi sint velit aut. Dolores hic facere exercitationem doloribus necessitatibus enim in perspiciatis impedit! Quae vitae sapiente quaerat magnam, consectetur delectus.
+    Aliquid quae placeat nam sit, ut dolore eius ratione vero quod excepturi sequi totam rerum? Cupiditate, dolore sit? Nobis qui harum recusandae! Eaque, repellat aperiam quod voluptas eligendi distinctio quae.
+    Quam aliquam necessitatibus deleniti. Aperiam tempora minima amet, eius quis facere. Iusto autem porro quo, aspernatur quas animi, laudantium provident magnam aliquid hic est minima, numquam quaerat explicabo tempore. Mollitia.
+    Officiis, aliquid rerum! Aliquam id, amet adipisci incidunt voluptatum culpa ipsam deserunt voluptates quos ipsa perspiciatis autem voluptatibus sequi, earum rerum iusto suscipit voluptate dignissimos unde nemo. Quod, fuga velit.
+    Magni necessitatibus, laborum dolores deserunt eaque ex eum cum, recusandae repellendus quis est tempora excepturi, beatae inventore nemo hic ad eius dignissimos. Similique fugiat odit nostrum. Dicta quasi asperiores optio?
+    Numquam unde quibusdam ea maxime eius commodi non, vitae voluptas ullam nisi odit temporibus repellat ut! Blanditiis in a dolorum mollitia, enim quibusdam ipsa nam doloremque nisi quam, rerum velit?
+    Hic deserunt ut dolor exercitationem quo nemo nobis quis beatae inventore officia maxime animi alias eius nulla praesentium reprehenderit neque ipsam, blanditiis aliquam amet omnis. Sit doloremque magni ad molestias.
+    Amet reprehenderit in illum perspiciatis quibusdam commodi magni, dicta, corrupti cum, modi qui atque quisquam harum ipsum ipsa hic nihil eum eaque laborum! Voluptas natus incidunt minus vel, aspernatur repellat.
+    Unde molestiae aspernatur consequuntur. Voluptatem ex est, blanditiis officiis suscipit eveniet aperiam velit nihil, voluptates sunt nobis laborum quisquam autem asperiores nam cupiditate exercitationem fugit placeat, reiciendis cumque recusandae? Excepturi.
+    Ea iure natus fugiat saepe sequi molestias nemo voluptas incidunt quos optio labore officiis laborum non, culpa dignissimos obcaecati at eligendi neque nobis officia mollitia sunt. Debitis minima mollitia aperiam!</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi sint velit aut. Dolores hic facere exercitationem doloribus necessitatibus enim in perspiciatis impedit! Quae vitae sapiente quaerat magnam, consectetur delectus.
+    Aliquid quae placeat nam sit, ut dolore eius ratione vero quod excepturi sequi totam rerum? Cupiditate, dolore sit? Nobis qui harum recusandae! Eaque, repellat aperiam quod voluptas eligendi distinctio quae.
+    Quam aliquam necessitatibus deleniti. Aperiam tempora minima amet, eius quis facere. Iusto autem porro quo, aspernatur quas animi, laudantium provident magnam aliquid hic est minima, numquam quaerat explicabo tempore. Mollitia.
+    Officiis, aliquid rerum! Aliquam id, amet adipisci incidunt voluptatum culpa ipsam deserunt voluptates quos ipsa perspiciatis autem voluptatibus sequi, earum rerum iusto suscipit voluptate dignissimos unde nemo. Quod, fuga velit.
+    Magni necessitatibus, laborum dolores deserunt eaque ex eum cum, recusandae repellendus quis est tempora excepturi, beatae inventore nemo hic ad eius dignissimos. Similique fugiat odit nostrum. Dicta quasi asperiores optio?
+    Numquam unde quibusdam ea maxime eius commodi non, vitae voluptas ullam nisi odit temporibus repellat ut! Blanditiis in a dolorum mollitia, enim quibusdam ipsa nam doloremque nisi quam, rerum velit?
+    Hic deserunt ut dolor exercitationem quo nemo nobis quis beatae inventore officia maxime animi alias eius nulla praesentium reprehenderit neque ipsam, blanditiis aliquam amet omnis. Sit doloremque magni ad molestias.
+    Amet reprehenderit in illum perspiciatis quibusdam commodi magni, dicta, corrupti cum, modi qui atque quisquam harum ipsum ipsa hic nihil eum eaque laborum! Voluptas natus incidunt minus vel, aspernatur repellat.
+    Unde molestiae aspernatur consequuntur. Voluptatem ex est, blanditiis officiis suscipit eveniet aperiam velit nihil, voluptates sunt nobis laborum quisquam autem asperiores nam cupiditate exercitationem fugit placeat, reiciendis cumque recusandae? Excepturi.
+    Ea iure natus fugiat saepe sequi molestias nemo voluptas incidunt quos optio labore officiis laborum non, culpa dignissimos obcaecati at eligendi neque nobis officia mollitia sunt. Debitis minima mollitia aperiam!</p>
+            </div>
+        </div>
+    </section>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse excepturi sint velit aut. Dolores hic facere exercitationem doloribus necessitatibus enim in perspiciatis impedit! Quae vitae sapiente quaerat magnam, consectetur delectus.
+    Aliquid quae placeat nam sit, ut dolore eius ratione vero quod excepturi sequi totam rerum? Cupiditate, dolore sit? Nobis qui harum recusandae! Eaque, repellat aperiam quod voluptas eligendi distinctio quae.
+    Quam aliquam necessitatibus deleniti. Aperiam tempora minima amet, eius quis facere. Iusto autem porro quo, aspernatur quas animi, laudantium provident magnam aliquid hic est minima, numquam quaerat explicabo tempore. Mollitia.
+    Officiis, aliquid rerum! Aliquam id, amet adipisci incidunt voluptatum culpa ipsam deserunt voluptates quos ipsa perspiciatis autem voluptatibus sequi, earum rerum iusto suscipit voluptate dignissimos unde nemo. Quod, fuga velit.
+    Magni necessitatibus, laborum dolores deserunt eaque ex eum cum, recusandae repellendus quis est tempora excepturi, beatae inventore nemo hic ad eius dignissimos. Similique fugiat odit nostrum. Dicta quasi asperiores optio?
+    Numquam unde quibusdam ea maxime eius commodi non, vitae voluptas ullam nisi odit temporibus repellat ut! Blanditiis in a dolorum mollitia, enim quibusdam ipsa nam doloremque nisi quam, rerum velit?
+    Hic deserunt ut dolor exercitationem quo nemo nobis quis beatae inventore officia maxime animi alias eius nulla praesentium reprehenderit neque ipsam, blanditiis aliquam amet omnis. Sit doloremque magni ad molestias.
+    Amet reprehenderit in illum perspiciatis quibusdam commodi magni, dicta, corrupti cum, modi qui atque quisquam harum ipsum ipsa hic nihil eum eaque laborum! Voluptas natus incidunt minus vel, aspernatur repellat.
+    Unde molestiae aspernatur consequuntur. Voluptatem ex est, blanditiis officiis suscipit eveniet aperiam velit nihil, voluptates sunt nobis laborum quisquam autem asperiores nam cupiditate exercitationem fugit placeat, reiciendis cumque recusandae? Excepturi.
+    Ea iure natus fugiat saepe sequi molestias nemo voluptas incidunt quos optio labore officiis laborum non, culpa dignissimos obcaecati at eligendi neque nobis officia mollitia sunt. Debitis minima mollitia aperiam!</p>
+
+    
+    <script src="./assets/@phosphor-icons/web/src/index.js"></script>
+    <script src="app.js" defer></script>
 </body>
 
 </html>

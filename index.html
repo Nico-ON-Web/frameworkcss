@@ -1,145 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utilisation de mon framework</title>
+    <title>Documentation de mon framework css</title>
     <meta name="description" content="">
+    <!-- Prism -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js" data-manual></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+
+<body class="light">
     <header class="flex align-center justify-between">
-        <div>LOGO</div>
+        <div>Mon Framework CSS</div>
         <nav class="flex align-center gap closed-nav">
             <a href="index.html"><i class="ph ph-house"></i></a>
-            <a href="doc.html">Page</a>
-            <a href="">Menu 1</a>
-            <a href="">Menu 1</a>
-            <a href="" class="btn btn-primary">Me connecter</a>
+            <a href="doc.html">exemple</a>
+            <a href="">lien github</a>
+            <span class="flex align-center gap" style="--gap:4px">
+                <i class="ph ph-sun"></i>
+                <label class="toggle">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <i class="ph ph-moon"></i>
+            </span>
+
         </nav>
         <label class="burger">
             <input type="checkbox" name="buger" id="burger">
-             <i class="ph ph-list"></i>
-        
-        </label>  
-      
+            <i class="ph ph-list"></i>
+
+        </label>
+
     </header>
     <!-- Hero baniere -->
     <div class="hero">
         <div class="hero-banner">
-            <h2 class="slogan">This is a grosse phrase d'accroche</h2>
-            <p>Petit paragraphe de slogan sur une ou 2 lignes vite fait</p>
-            <p>Amener au cta par l'entonoir</p>
+            <h2 class="slogan">Utilisation du Framework</h2>
+            <p>Une documentation simple et concise</p>
+            <p>du moins on l'espère</p>
             <a href="" class="btn btn-primary">
-                <i class="ph ph-shopping-cart"></i>
-            Achèèèèète !</a>
+                Découvrir</a>
         </div>
-       
-
     </div>
-
-    <!-- Sections cartes -->
-    <section class="container-1000 mt-100">
-        <h2>Lorem Ipsum t'as vu !</h2>
+    <!-- Zone avec sidebar  -->
+    <section>
         <div class="flex gap">
-            <div class="card large-3 medium-6 small-12">
-                <img src="./assets/img-placeholder.jpg" alt="">
-                <h4>Titre de la carte</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
-                <a href="" class="btn btn-primary">voir le truc</a>
+            <div class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="">Couleurs</a></li>
+                        <li><a href="">Titres et paragraphes</a></li>
+                        <li><a href="">Margins et paddings</a></li>
+                        <li><a href="">Boutons</a></li>
+                        <li><a href="">Largeur et Colonnes</a></li>
+                        <li><a href="">Cards</a></li>
+                        <li><a href="">Accordeon</a></li>
+                        <li><a href="">Carousel</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="card large-3 medium-6 small-12">
-                <img src="./assets/img-placeholder.jpg" alt="">
-                <h4>Titre de la carte</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
-                <a href="" class="btn btn-primary">voir le truc</a>
+            <div class="right-side">
+                <!-- Couleurs  -->
+                <section class="mt-100">
+                    <h2>Couleurs</h2>
+                    <p>Un systeme de couleurs simple avec 2 criteres: notion de priorité et notion d'eloignement</p>
+                    <div class="mt-64">
+                        <h4>Couleurs de priorité</h4>
+                        <p><span class="classname">--primary</span> la couleur primaire du site, le plus souvent la
+                            couleur d'appel à l'action sur les éléments cliquables principaux</p>
+                        <p><span class="classname">--secondary</span> la couleur secondaire du site, la couleur d'appel
+                            à l'action sur les éléments cliquables secondaire</p>
+                        <p><span class="classname">--hover</span>une couleur , des liens au survol de la souris pour le
+                            header, les différentes navigation et les boutons</p>
+                    </div>
+
+                    <div class="mt-64">
+                        <h4>Les couleurs par eloignements</h4>
+                        <p>Systeme de couleurs du plus clair au plus foncé ou réciproquement pour les thèmes clairs ou
+                            sombre. La règle pour les thème sombre etant que plus l'element est eloigné plus il est
+                            sombre</p>
+                    </div>
+
+
+
+                </section>
+                <!-- Titres et paragraphes -->
+                <section class="mt-100">
+                    <h2>Titres et paragraphes</h2>
+                    <p>Les titres h1 à h6 ainsi que les paragraphes utilisent la typographie Outfit , disponible sur
+                        google font. Les fichiers sources se trouvent dans le dossier <span
+                            class="filename">assets</span></p>
+                    <p>Vous retrouverez dans le framework des classes standards pour styliser le texte</p>
+                    <div class="p-16">
+                        <h4>Alignement</h4>
+                        <ul>
+                            <li><span class="classname">.text-center</span> aligne le texte au centre</li>
+                            <li><span class="classname">.text-right</span> aligne le texte à droite</li>
+                            <li><span class="classname">.text-left</span> aligne le texte à gauche</li>
+                        </ul>
+                    </div>
+                    <div class="p-16">
+                        <h4 class="mt-16">Style et graisse</h4>
+                        <ul>
+                            <li><span class="classname">.bold</span> texte en gras</li>
+                            <li><span class="classname">.regular</span> texte en gras</li>
+                            <li><span class="classname">.light</span> texte en gras</li>
+                            <li><span class="classname">.bold-100, ..., .bold-900</span> texte en gras différentes
+                                graisses utilisant la valeur numerique</li>
+                        </ul>
+                    </div>
+
+                </section>
+                <!-- Marges et paddings -->
+                <section class="mt-100">
+                    <h2>Marges internes et externes</h2>
+                    <p>Une liste de classes fonctionnelles permettent de rajouter des marges et des paddings, la
+                        nomenclature suit cette regle : </p>
+                    <div class="p-16">
+                        <ul>
+                            <li>m : pour margin , p: pour padding</li>
+                            <li>mt, mb, ml, pt, pb ... ppour margin-top, margin-bottom , margin-left etc.. </li>
+                            <li>m-auto : pour les marges automatiques à gauche et à droite</li>
+                            <li>mt-100 : la valeur en pixel de la marge</li>
+                        </ul>
+                    </div>
+
+                </section>
+                <!-- Boutons -->
+                <section class="mt-100">
+                    <h2>Boutons</h2>
+                    <p><span class="classname">.btn</span> est la classe générique qui permet de styliser les boutons
+                    </p>
+                    <p>On rajoutera la classe <span class="classname">.btn-primary</span> pour les actions principales,
+                        <span class="classname">.btn-secondary</span> pour les actions secondaires ou encore <span
+                            class="classname">.btn-disabled</span> pour les boutons innactifs
+                    </p>
+                    <div class="mt-16 flex gap">
+                        <a href="" class="btn btn-primary">Bouton primaire</a>
+                        <a href="" class="btn btn-secondary">Bouton secondaire</a>
+                        <a href="" class="btn btn-disabled">Bouton inactif</a>
+                    </div>
+                </section>
+                <!-- Largeur et colonnes -->
+                <section class="mt-100">
+                    <h2>Largeurs et colonnes</h2>
+                    <p>Pour la mise en page le framework utilise le systeme de flexbox avec les classes fonctionnelles
+                        classiques <span class="classname">.flex</span>, <span
+                            class="classname">.justify-between</span>,<span class="classname">.align-center</span>
+                        etc... </p>
+                    <div class="flex gap align-center mt-32">
+                        <div class="large-6">
+                            <p>La specificité reside dans l'utilisation de classes de largeurs dynamiques en fonction du
+                                gap choisis. (Par défaut le gap entre 2 colonnes est de 32 pixels). Vous pouvez modifer
+                                ce gap en modifiant la variable dans l'attribut style de l'element qui porte la classe
+                                flex </p>
+                        </div>
+
+                    </div>
+                    <div class="flex gap">
+                        <div class="large-6">
+                            <div class="mt-32">
+                                <h4>Avec le gap de base : </h4>
+                                <div class="code-block">
+                                    <button class="copy-btn">Copier</button>
+                                    <pre><code class="language-html"></code></pre>
+                                    <script type="text/plain" class="code-source">
+<div class="flex gap">
+    <div class="large-3"></div>
+    <div class="large-3"></div>
+    <div class="large-3"></div>
+    <div class="large-3"></div>
+</div>
+</script>
+                                </div>
+                                <div class="mt-32">
+                                    <h4>Résultat : </h4>
+                                    <div class="flex gap">
+                                        <div class="large-3 div-exemple"></div>
+                                        <div class="large-3 div-exemple"></div>
+                                        <div class="large-3 div-exemple"></div>
+                                        <div class="large-3 div-exemple"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-6">
+                            <!-- 2eme exemple avec un petit gap -->
+                            <div class="mt-32">
+                                <h4>En reduisant le gap :</h4>
+                                <div class="code-block">
+                                    <button class="copy-btn">Copier</button>
+                                    <pre><code class="language-html"></code></pre>
+                                    <script type="text/plain" class="code-source">
+<div class="flex gap" style="--gap:4px">
+    <div class="large-3"></div>
+    <div class="large-3"></div>
+    <div class="large-3"></div>
+    <div class="large-3"></div>
+</div>
+</script>
+                                </div>
+                            </div>
+
+                            <div class="mt-32">
+                                <h4>resultat :</h4>
+                                <div class="flex gap" style="--gap:4px">
+                                    <div class="large-3 div-exemple"></div>
+                                    <div class="large-3 div-exemple"></div>
+                                    <div class="large-3 div-exemple"></div>
+                                    <div class="large-3 div-exemple"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Cards -->
+                <section class="mt-100">
+                    <h2>Cards</h2>
+                    <p>nous vous proposons deux modeles de cartes toutes pretes : des cartes classiques avec image,
+                        description et bouton, ainsi que des cartes pour des avis cliens</p>
+                    <div class="mt-64">
+                        <div class="large-8 medium-12 small-12 m-auto">
+                            <h4>Carte classique</h4>
+                            <div class="code-block">
+                                <button class="copy-btn">Copier</button>
+                                <pre><code class="language-html"></code></pre>
+                                <script type="text/plain" class="code-source">
+<div class="m-auto mt-32 card large-4 medium-6 small-12">
+    <img src="./assets/img-placeholder.jpg" alt="">
+    <div class="card-content">
+        <h4>Titre de la carte</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
+        <a href="" class="btn btn-primary">voir le truc</a>
+    </div>
+</div>           
+                          
+</script>
+                            </div>
+                            <!-- Appercu carte classique -->
+                            <div>
+                                <div class="m-auto mt-32 card large-5 medium-6 small-12">
+                                    <img src="./assets/img-placeholder.jpg" alt="">
+                                    <div class="card-content">
+                                        <h4>Titre de la carte</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero!
+                                            Dolorum nam facere
+                                            corrupti perferendis culpa vitae commodi accusamus</p>
+                                        <a href="" class="btn btn-primary">voir le truc</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-8 medium-12 m-auto mt-64">
+                            <h4>Carte Avis clients</h4>
+                            <div class="code-block">
+                                <button class="copy-btn">Copier</button>
+                                <pre><code class="language-html"></code></pre>
+                                <script type="text/plain" class="code-source">
+<div class="avis large-4 medium-6 small-12">
+    <div class="flex gap align-center">
+        <div class="avatar"></div>
+        <div>
+            <h4>Nom prenom</h4>
+            <div class="stars">
+                ★★★★☆
             </div>
-            <div class="card large-3 medium-6 small-12" medium-6 small-12>
-                <img src="./assets/img-placeholder.jpg" alt="">
-                <h4>Titre de la carte</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
-                <a href="" class="btn btn-primary">voir le truc</a>
-            </div>
-            <div class="card large-3 medium-6 small-12">
-                <img src="./assets/img-placeholder.jpg" alt="">
-                <h4>Titre de la carte</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi unde vero! Dolorum nam facere corrupti perferendis culpa vitae commodi accusamus</p>
-                <a href="" class="btn btn-primary">voir le truc</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita
+rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni.</p>          
+</div>          
+           
+</script>
+                            </div>
+                            <!-- Appercu carte avis -->
+                            <div>
+                                <div class="m-auto mt-32 avis large-5 medium-6 small-12">
+                                    <div class="flex gap align-center">
+                                        <div class="avatar"></div>
+                                        <div>
+                                            <h4>Nom prenom</h4>
+                                            <div class="stars">
+                                                ★★★★☆
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima
+                                        voluptas expedita
+                                        rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci.
+                                        Ratione, magni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section accordeon -->
+                <section class="mt-100">
+                    <h2>Accordeon</h2>
+                    <p>Un systeme d'accordéon géré en javascript , pour qu'il fonctionne vous devez utiliser la
+                        structure suivante: </p>
+                    <div class="flex gap align-center">
+                        <div class="large-8 medium-8 small-12 code-block mt-32 m-auto">
+                            <button class="copy-btn">Copier</button>
+                            <pre><code class="language-html"></code></pre>
+                            <script type="text/plain" class="code-source">
+ <div class="accordion">
+    <div class="accordion-title">
+        <h4>Titre de l'accordeon</h4>
+        <i class="ph ph-caret-right"></i>
+    </div>
+    <div class="accordion-content">
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea itaque quod
+                sunt inventore architecto, odit saepe cumque laudantium aspernatur sit voluptatibus,
+                asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+        </div>
+    </div>
+</div>
+</script>
+                        </div>
+                        <div class="large-8 medium-8 small-12 m-auto mt-32">
+                            <h4>Apperçu : </h4>
+
+                            <div class="accordion">
+                                <div class="accordion-title">
+                                    <h4>Titre de l'accordeon</h4>
+                                    <i class="ph ph-caret-right"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea
+                                            itaque quod
+                                            sunt inventore architecto, odit saepe cumque laudantium aspernatur sit
+                                            voluptatibus,
+                                            asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-title">
+                                    <h4>Titre de l'accordeon</h4>
+                                    <i class="ph ph-caret-right"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea
+                                            itaque quod
+                                            sunt inventore architecto, odit saepe cumque laudantium aspernatur sit
+                                            voluptatibus,
+                                            asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-title">
+                                    <h4>Titre de l'accordeon</h4>
+                                    <i class="ph ph-caret-right"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ea
+                                            itaque quod
+                                            sunt inventore architecto, odit saepe cumque laudantium aspernatur sit
+                                            voluptatibus,
+                                            asperiores maiores consequuntur dolore. Aliquid illo magnam iste.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section slider -->
+                <section>
+                    <h2>Carousel</h2>
+                    <p>je vous propose deux types de carousel selon le type de transition entre les slides contrôlable
+                        grâce à l'attribut data-type :</p>
+                    <div class="p-16">
+                        <ul>
+                            <li><span class="classname">data-type="opacity"</span>transition par l'opacité </li>
+                            <li><span class="classname">data-type="opacity"</span>transition par l'opacité </li>
+                        </ul>
+                    </div>
+                    <div class="large-8 medium-8 small-12 code-block mt-32 m-auto">
+                            <button class="copy-btn">Copier</button>
+                            <pre><code class="language-html"></code></pre>
+<script type="text/plain" class="code-source">
+<div class="slider mt-32">
+    <div class="slides" data-type="translation">
+        <div class="slide slide-visible">
+            <img src="./assets/17-2500x1667.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./assets/20-3670x2462.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="./assets/28-4928x3264.jpg" alt="">
+        </div>
+    </div>
+    <div class="slider-navigation">
+        <div class="slider-left">
+            <i class="ph ph-caret-left"></i>
+        </div>
+        <div class="slider-right">
+            <i class="ph ph-caret-right"></i>
+        </div>
+    </div>
+</div>
+</script>
+                        </div>
+                    <div class="mt-64 flex gap">
+                        <div class="large-6 medium-12 small-12">
+                            <h3>Tansition par l'opacité</h3>
+                            <!-- Apercu transiion opacité -->
+                            <div class="slider mt-32">
+
+                                
+                                <div class="slides" data-type="opacity">
+                                    <div class="slide slide-visible">
+                                        <img src="./assets/17-2500x1667.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./assets/20-3670x2462.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./assets/28-4928x3264.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider-navigation">
+                                    <div class="slider-left">
+                                        <i class="ph ph-caret-left"></i>
+                                    </div>
+                                    <div class="slider-right">
+                                        <i class="ph ph-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-6 medium-12 small-12">
+                            <h3>Tansition par la translation</h3>
+                            <!-- Apercu transiion translation -->
+                            <div class="slider mt-32">
+                                <div class="slides" data-type="translation">
+                                    <div class="slide slide-visible">
+                                        <img src="./assets/17-2500x1667.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./assets/20-3670x2462.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./assets/28-4928x3264.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider-navigation">
+                                    <div class="slider-left">
+                                        <i class="ph ph-caret-left"></i>
+                                    </div>
+                                    <div class="slider-right">
+                                        <i class="ph ph-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
 
-    <!-- Section avec petits articles alternés -->
-    <section class="container-1000 mt-100">
-        <h2>Lorem Ipsum encore et ouais ! </h2>
-        <article class="flex align-center gap mt-32">
-            <div class="large-6 medium-6 small-12">
-                <img src="./assets/img-placeholder.jpg" class="responsive" alt="">
-            </div>
-            <div class="large-6 medium-6 small-12">
-                <h3>Titre de la section  / article</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi dolores aspernatur veniam at?</p>
-                <a href="" class="btn btn-secondary mt-32">Lire la suite</a>
-            </div>
-        </article>
-        <article class="flex reverse align-center gap mt-64">
-            <div class="large-6 medium-6 small-12">
-                <img src="./assets/img-placeholder.jpg" class="responsive" alt="">
-            </div>
-            <div class="large-6 medium-6 small-12">
-                <h3>Titre de la section  / article</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore porro iure minima consequatur, facilis amet architecto laudantium nulla illo et dignissimos maiores doloremque ut nisi dolores aspernatur veniam at?</p>
-                <a href="#toto" class="btn btn-secondary mt-32">Lire la suite</a>
-            </div> 
-        </article>
-    </section>
 
-    <!-- Section avis utilisateurs -->
-    <section class="bg-grey mt-100">
-        <div class="container-1000">
-            <h2>Avis utilisateurs</h2>
-            <div class="flex gap align-start mt-32">
-                <div class="avis large-4 medium-6 small-12">
-                    <div class="flex gap align-center">
-                        <div class="avatar"></div>
-                        <div>
-                            <h4>Nom prenom</h4>
-                            <div class="stars">
-                                ★★★★☆
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
-                </div>
-                <div class="avis large-4 medium-6 small-12">
-                    <div class="flex gap align-center">
-                        <div class="avatar"></div>
-                        <div>
-                            <h4>Nom prenom</h4>
-                            <div class="stars">
-                                ★★★★☆
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
-                </div>
-                <div class="avis large-4 medium-6 small-12">
-                    <div class="flex gap align-center">
-                        <div class="avatar"></div>
-                        <div>
-                            <h4>Nom prenom</h4>
-                            <div class="stars">
-                                ★★★★☆
-                            </div>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid, minima voluptas expedita rem asperiores blanditiis cupiditate itaque recusandae nisi, incidunt adipisci. Ratione, magni. </p>
-                </div>
-            </div> 
-        </div> 
-    </section>
-    <script src="assets/@phosphor-icons/web/src/index.js"></script>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <script src="./js/code.js" defer></script>
+    <script src="./assets/@phosphor-icons/web/src/index.js"></script>
     <script src="app.js" defer></script>
 </body>
+
 </html>
