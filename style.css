@@ -291,6 +291,12 @@ header nav {
 header nav a {
   color: var(--premier-plan);
   transition: color .33s ease;
+  display: flex;
+  align-items: center;
+  gap:4px
+}
+nav i{
+  font-size: 20px;
 }
 
 header a:hover,
@@ -848,7 +854,7 @@ les resolutions d'ecrans d'apres un petit script sass*/
     top: 52px;
     left:0;
     height: calc(100vh - 52px);
-    z-index: 999;
+    z-index: 100;
     transition: left 0.3s ease;
 
     
@@ -876,7 +882,7 @@ les resolutions d'ecrans d'apres un petit script sass*/
   }
   .right-side{
     width: 100%;
-    padding: 16px 16px 16px 32px;
+    padding: 32px;
   }
   .medium-1 {
     width: calc(8.3333333333% - 11 * var(--gap) / 12);
