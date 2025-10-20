@@ -819,7 +819,7 @@ les resolutions d'ecrans d'apres un petit script sass*/
 @media all and (max-width: 800px) {
     header{
     position: fixed;
-    top:0;
+    top: env(safe-area-inset-top, 0); 
     width: 100vw;
   }
   h2,.slogan{

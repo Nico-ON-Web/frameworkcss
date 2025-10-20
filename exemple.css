@@ -284,7 +284,7 @@ header {
   background-color: var(--troisieme-plan);
   padding: 16px 64px;
   position: sticky;
-  top: 0px;
+ top: 0;
   left: 0px;
   z-index: 999;
   width: 100%;
